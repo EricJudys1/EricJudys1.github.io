@@ -128,10 +128,11 @@ strong {
   margin-bottom: 10px; 
 }
 .about-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
+  display: block;
+  text-align: center;
+  width: fit-content;  /* Shrinks to fit content */
+  margin-left: auto;
+  margin-right: auto;
 }
 .button {
   padding: 0.3rem 1rem;
