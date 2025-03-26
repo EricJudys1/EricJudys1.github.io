@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     title: "B.O.B. <br><i>Software Engineer</i>",
     language: "Python",
     topic: "Robotics & AI",
-    timeframe: "Q3 2024 - Present",
+    timeframe: "Q3 2023 - Present",
     description: "A MuJoCo project to develop an autonomous system to self-propel a bipedal bot with reinforcment learning",
     detailedDescription: "<div>We aim to develop a cutting-edge protocol that will enable our quarter-scale bipedal exploration robot named <strong>Bipedal Operations Bot</strong>, or <strong>B.O.B.</strong> for short, to walk as <strong>smoothly and naturally</strong> as possible under remote control. B.O.B. will be operated by a <strong>human controller</strong> wearing a <strong>VR headset</strong>, using an intuitive, controller-like interface to direct its movements.</div><br><div>Anyone who has used a VR headset understands that <strong>misalignment</strong> between visual and physical cues can lead to severe <strong>nausea</strong> and discomfort. While we could mitigate this by securing the operator to an omnidirectional treadmill to simulate walking, this solution is not the most <strong>cost-effective</strong> or practical. Instead, our goal is to seamlessly merge <strong>human operator input</strong> with robot movements through <strong>reinforcement learning</strong>. This approach will ensure the most <strong>fluid, realistic interaction</strong> between the operator and the robot as B.O.B. walks, runs, jumps, or even climbs obstacles.</div><br><div>By training the robot to mimic human behaviors — from <strong>view bobbing</strong> to smooth, nuanced actions and <strong>subtle head movements</strong> — we can generate a <strong>semi-realistic experience</strong> that <strong>improves connection</strong> between the operator and the robot. This method enhances the <strong>efficiency</strong> of the entire experience, allowing the operator to feel as if they’re truly controlling the robot, even without physically being present.<br><br>This is a team project with: </div><div class=\"button-box\" style=\"display: flex;\"><span class=\"clickable-button\"><a href=\"https://www.linkedin.com/in/bassem-elkhateeb\" target=\"_blank\" class=\"button\">Bassem Elkhateeb</a></span><span class=\"clickable-button\"><a href=\"https://www.linkedin.com/in/msskhan\" target=\"_blank\" class=\"button\">Mohammad Khan</a></span><span class=\"clickable-button\"><a href=\"https://www.linkedin.com/in/johnson-wang-612204217\" target=\"_blank\" class=\"button\">Johnson Wang</a></span></div>",
     image_small: "images/bobBackpack.png",
@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   {
     title: "Advent of Code <br><i>Personal Project</i>",
-    language: "Python",
+    language: "Python, Java",
     topic: "Challenges & Class",
-    timeframe: "2020 - 2024",
+    timeframe: "2021 - 2024",
     description: "A collection of programming challenges, enhancing problem-solving skills and algorithmic thinking.",
     detailedDescription: "<div><strong>Advent of Code (AOC)</strong> is a world-renowned coding adventure with <strong>incrementally challenging puzzles</strong> that start as pure problem-solving exercises and later demand <strong>heavy optimization</strong> on larger datasets. I’ve been participating in this challenge since 2020, and with 2024 marking its 10th anniversary, this year was no different.</div><br><div>Using an <strong>inherently slower language</strong>, I had to emphasize <strong>optimizations</strong> to keep execution times reasonable. But even with <strong>memoization, Dijkstra’s algorithm, and set operations</strong>, the later problems pushed beyond raw speed improvements—they required a <strong>deep understanding of the problem itself</strong>.</div><br><div>For example, on <a href=\"https://adventofcode.com/2024/day/17\" class=\"embedded-link\">Day 17</a>, I had to decode unique assembly-esque instructions</strong> to reconstruct a sequence and generate any needed instructions, while <a href=\"https://adventofcode.com/2024/day/24\" class=\"embedded-link\">Day 24</a> required breaking down how a <strong>bit adder</strong> functioned to determine which <strong>logic gates</strong> to swap. Challenges like these go beyond conventional algorithmic thinking, demanding a unique approach to <strong>pattern recognition and problem deconstruction</strong>.</div><br><div>This <strong>annual challenge</strong> remains a fun and engaging tradition that continuously improves my <strong>algorithmic thinking and optimization strategies</strong>.</div>",
     image_small: "images/aocmini.png",
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     title: "Mini Compiler <br><i>Software Engineer</i>",
     language: "OCaml",
     topic: "Challenges & Class",
-    timeframe: "Q4 2024",
+    timeframe: "Q3 - Q4 2024",
     description: "A lightweight compiler built in OCaml, designed to process and optimize simple programs",
     detailedDescription: "<div><strong>I developed a lexer and parser</strong> – using OCaml's built-in lexer support, <strong>OCamllex</strong> – for a custom <strong>mini-SQL language</strong> which involved creating a new <strong>syntax</strong> and defining <strong>keywords</strong> tailored to SQL-like operations. <strong>Variable storage</strong> and <strong>expression parsing</strong> were just some of the aspects I added to create a streamlined <strong>grammar structure</strong> that could execute queries similar to SQL with a focus on <strong>relational operations</strong>.</div><br><div>By using <strong>relational algebra principles</strong>, I ensured that each operation in the language made logical sense and adhered to well-established <strong>relational theory</strong>, ultimately providing an accurate understanding of how the program would process. The result was a <strong>fully functional mini-SQL compiler</strong> capable of executing basic operations in a controlled environment, serving as a strong foundation for further <strong>compiler design</strong> exploration.</div>",
     image_small: "images/compilermini.png",
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     title: "Network Chatroom <br><i>Software Engineer</i>",
     language: "OCaml",
     topic: "Challenges & Class",
-    timeframe: "Q4 2024",
+    timeframe: "Q3 - Q4 2024",
     description: "A real-time chatroom application written in OCaml, focusing on network communication and concurrency",
     detailedDescription: "<div>Working with <strong>network protocols</strong> and <strong>promises</strong>, I built an application that can host and run multiple users in a single chatroom. Fundamentally, though, the internet is unpredictable, and messages come on their own time or may not even come. Messages take time to send, confirmations are unreliable, and blocking a response that might never come is a great way to lock everything up.</div><br><div>To fix this issue, I leveraged <strong>promises</strong>, a system in which a value doesn’t exist yet but will resolve when it arrives. Now, the system ensures that a promise only returns when it actually has something. Since OCaml’s <strong>concurrency model</strong> is built directly on top of the OS, I took full advantage of <strong>Lwt (Lightweight Threads)</strong> (not actually threading) to handle <strong>network events</strong> asynchronously and keep everything running smoothly.</div><br><div>This <strong>event-driven</strong> approach allowed the chatroom to juggle multiple users, messages, and network events without deadlocks or forever waiting on an unresponsive client. Thus, it created a fully functional, non-blocking chat system that remains <strong>responsive</strong>, <strong>efficient</strong>, and <strong>scalable</strong>, even under unpredictable network conditions.</div>",
     image_small: "images/chatroommini.jpg",
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     image_full: "images/ocamlgamebiggie.png"
   },
   {
-    title: "Midnight Smack <br><i>Software Engineer</i>",
+    title: "Midnight Smack <br><i>Software Engineer Lead</i>",
     language: "C++",
     topic: "Game Design",
     timeframe: "Q1 - Q2 2024",
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     title: "Stock-er <br><i>Personal Project</i>",
     language: "Python",
     topic: "Robotics & AI",
-    timeframe: "Q1 2024",
+    timeframe: "Q4 2023 - Q1 2024",
     description: "An AI-powered stock tracking tool that analyzes market trends and provides investment insights",
     detailedDescription: "<div>Wanting to jump in and learn more about developmenting in <strong>AI</strong>, I took on a project to try and <strong>track the stock market</strong>. Using past <strong>closing and opening rates</strong> as well as general <strong>market trends</strong>, I was able to track the stock price of generally stable companies to <strong>± couple dollars</strong>. Yet, it is still important to remember that the difference in cents defines the day-to-day changes. Ultimately, this project gave me valuable insight into how to <strong>train and develop an AI</strong>, but it yielded no financial success.</div><br><div>The project itself was powered by <strong>TensorFlow</strong> and pulled <strong>5-year datasets</strong> from companies such as <strong>Apple, Google, and General Motors</strong>, as well as scraping the web for news regarding <strong>relevant financial trends</strong> in each economic sector. It combined general predictions and put the information through a multitude of <strong>processing layers</strong of the market to accomplish this <strong>delta-dollar accuracy</strong>. More data is everything in training AI, as larger sets provide more information, but I was starting to meet <strong>paywalls</strong> and had <strong>limited knowledge of stocks</strong>, so the project ended with my stable prediction of stable companies.</div>",
     image_small: "images/stockermini.jpg",
@@ -241,7 +241,11 @@ document.addEventListener('DOMContentLoaded', () => {
     cards.forEach(card => {
       const cardLang = card.getAttribute('data-language');
       const cardTopic = card.getAttribute('data-topic');
-      const matches = (!lang || cardLang === lang) && (!topic || cardTopic === topic);
+      const matches = (
+        !lang || cardLang.split(',').map(l => l.trim()).includes(lang)
+      ) && (
+        !topic || cardTopic.split(',').map(t => t.trim()).includes(topic)
+      );
       card.style.display = matches ? "block" : "none";
       if (matches) matching.push(card);
     });

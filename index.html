@@ -61,6 +61,13 @@
         </div>
         <div class="about-image">
           <img src="images/headshot.png" alt="This is a picture of me" />
+          <div class="about-links">
+            <p>
+              <a href="https://www.linkedin.com/in/eric-judys-340a702a0" target="_blank" class="button">LinkedIn</a>
+              <a href="mailto:ericjudys1@gmail.com" target="_blank" class="button">Contact Me</a>
+              <a href="Eric_Judys_Resume.pdf" target="_blank" class="button">Resume</a>
+            </p>
+          </div>
         </div>
       </div>
       <div class="about-extra">
@@ -97,14 +104,6 @@
           </div>
         </div>
       </div>
-      <div class="about-links">
-        <p>
-          <a href="https://www.linkedin.com/in/eric-judys-340a702a0" target="_blank" class="button">LinkedIn</a>
-          <a href="mailto:ericjudys1@gmail.com" target="_blank" class="button">Contact Me</a>
-          <a href="Eric Judys Game Design Resume - March 2025.pdf" target="_blank" class="button">Software Engineering Resume</a>
-          <a href="Eric Judys SWE Resume - March 2025.pdf" target="_blank" class="button">Game Design Resume</a>
-        </p>
-      </div>
     </section>
     <section id="code-highlight" class="code-section">
       <h2>Code Highlight</h2>
@@ -115,58 +114,109 @@
       <div class="code-examples">
         <details>
           <summary>Show Python LAN Connections Solution</summary>
-          <pre class="dark-code-background"><code>
-    <span class="c-key">from</span> <span class="c-var">collections</span> <span class="c-key">import</span> <span class="c-var">defaultdict</span>
-    
-    <span class="c-key">with</span> <span class="c-var">open</span>(<span class="c-str">"input.txt"</span>, <span class="c-str">"r+"</span>) <span class="c-key">as</span> <span class="c-var">doc</span>:
-        <span class="c-var">input_txt</span> = [<span class="c-var">line</span>.<span class="c-func">strip</span>().<span class="c-func">split</span>(<span class="c-str">"-"</span>) <span class="c-key">for</span> <span class="c-var">line</span> <span class="c-key">in</span> <span class="c-var">doc</span>.<span class="c-func">readlines</span>()]
-    
-    <span class="c-var">connections</span> = <span class="c-var">defaultdict</span>(<span class="c-var">set</span>)
-    <span class="c-key">for</span> <span class="c-var">connection</span> <span class="c-key">in</span> <span class="c-var">input_txt</span>:
-        <span class="c-var">c1</span>, <span class="c-var">c2</span> = <span class="c-var">connection</span>
-        <span class="c-var">connections</span>[ (<span class="c-var">c1</span>,) ].<span class="c-func">add</span>(<span class="c-var">c2</span>)
-        <span class="c-var">connections</span>[ (<span class="c-var">c2</span>,) ].<span class="c-func">add</span>(<span class="c-var">c1</span>)
-    
-    <span class="c-key">def</span> <span class="c-func">combine_connections</span>(<span class="c-var">current_groups</span>, <span class="c-var">base_connections</span>):
-        <span class="c-var">new_groups</span> = <span class="c-var">defaultdict</span>(<span class="c-var">list</span>)
-        <span class="c-var">seen_groups</span> = <span class="c-var">set</span>()
-        <span class="c-key">for</span> <span class="c-var">group1</span>, <span class="c-var">conn1</span> <span class="c-key">in</span> <span class="c-var">current_groups</span>.<span class="c-func">items</span>():
-            <span class="c-key">for</span> <span class="c-var">group2</span>, <span class="c-var">conn2</span> <span class="c-key">in</span> <span class="c-var">base_connections</span>.<span class="c-func">items</span>():
-                <span class="c-var">common</span> = <span class="c-var">conn1</span> &amp; <span class="c-var">conn2</span>
-                <span class="c-key">if</span> (<span class="c-var">common</span> <span class="c-key">and</span> <span class="c-var">group1</span> <span class="c-key">not</span> <span class="c-var">in</span> <span class="c-var">new_groups</span> <span class="c-key">and</span> <span class="c-var">group2</span> <span class="c-key">not</span> <span class="c-var">in</span> <span class="c-var">group1</span> 
-                    <span class="c-key">and</span> <span class="c-var">set</span>(<span class="c-var">group1</span>).<span class="c-func">issubset</span>(<span class="c-var">conn2</span>) <span class="c-key">and</span> <span class="c-var">set</span>(<span class="c-var">group2</span>).<span class="c-func">issubset</span>(<span class="c-var">conn1</span>)):
-                    <span class="c-var">merged_group</span> = <span class="c-var">list</span>(<span class="c-var">group1</span>) + <span class="c-var">list</span>(<span class="c-var">group2</span>)
-                    <span class="c-var">merged_key</span> = <span class="c-var">tuple</span>(<span class="c-func">sorted</span>(<span class="c-var">merged_group</span>))
-                    <span class="c-var">key_common</span> = <span class="c-var">tuple</span>(<span class="c-func">sorted</span>(<span class="c-var">merged_group</span> + <span class="c-var">list</span>(<span class="c-var">common</span>)))
-                    <span class="c-key">if</span> <span class="c-var">key_common</span> <span class="c-key">not</span> <span class="c-var">in</span> <span class="c-var">seen_groups</span>:
-                        <span class="c-var">new_groups</span>[<span class="c-var">merged_key</span>] = <span class="c-var">common</span>
-                        <span class="c-var">seen_groups</span>.<span class="c-func">add</span>(<span class="c-var">key_common</span>)
-        <span class="c-key">return</span> <span class="c-var">new_groups</span>
-    
-    <span class="c-key">def</span> <span class="c-func">main</span>(<span class="c-var">connections</span>):
-        <span class="c-var">groups</span> = <span class="c-func">combine_connections</span>(<span class="c-var">connections</span>, <span class="c-var">connections</span>)
-        <span class="c-var">size</span> = <span class="code-number">2</span>
-    
-        <span class="c-key">while</span> <span class="c-var">groups</span>:
-            <span class="c-var">print</span>(<span class="c-str">"Current group size:"</span>, <span class="c-var">size</span>, <span class="c-str">"; Total groups:"</span>, <span class="c-func">len</span>(<span class="c-var">groups</span>))
-            <span class="c-var">finalized</span> = <span class="c-var">set</span>()
-            <span class="c-var">groups</span> = <span class="c-func">combine_connections</span>(<span class="c-var">groups</span>, <span class="c-var">connections</span>)
-            <span class="c-var">updated_groups</span> = {}
-    
-            <span class="c-key">for</span> <span class="c-var">group</span>, <span class="c-var">common</span> <span class="c-key">in</span> <span class="c-var">groups</span>.<span class="c-func">items</span>():
-                <span class="c-key">if</span> <span class="c-func">len</span>(<span class="c-var">common</span>) <span class="code-operator">==</span> <span class="code-number">1</span>:
-                    <span class="c-var">finalized</span>.<span class="c-func">add</span>(<span class="c-var">tuple</span>(<span class="c-func">sorted</span>(<span class="c-var">list</span>(<span class="c-var">group</span>) + [<span class="c-var">common</span>.<span class="c-func">pop</span>()])))
-                <span class="c-key">else</span>:
-                    <span class="c-var">updated_groups</span>[<span class="c-var">group</span>] = <span class="c-var">common</span>
-            <span class="c-var">groups</span> = <span class="c-var">updated_groups</span>
-            <span class="c-var">size</span> += <span class="code-number">1</span>
-    
-        <span class="c-var">print</span>(<span class="c-var">finalized</span>)
-        <span class="c-key">for</span> <span class="c-var">group</span> <span class="c-key">in</span> <span class="c-var">finalized</span>:
-            <span class="c-key">for</span> <span class="c-var">computer</span> <span class="c-key">in</span> <span class="c-func">sorted</span>(<span class="c-var">group</span>):
-                <span class="c-var">print</span>(<span class="c-var">computer</span>, <span class="c-func">end</span>=<span class="c-str">","</span>)
-    <span class="c-func">main</span>(<span class="c-var">connections</span>)
-          </code></pre>
+          <pre class="dark-code-background"><pre><code>
+<span class="c-key">from</span> <span class="c-var">collections</span> <span class="c-key">import</span> <span class="c-var">defaultdict</span>
+
+<span class="c-comm">"""import input as text after removing new line and seperating the computers
+  note that inputs comes in this form:
+  vz-aj
+  qm-zr
+  cc-av
+  """</span>
+<span class="c-key">with</span> <span class="c-var">open</span>(<span class="c-str">"input.txt"</span>, <span class="c-str">"r+"</span>) <span class="c-key">as</span> <span class="c-var">doc</span>:
+  <span class="c-var">input_txt</span> <span class="c-oper">=</span> [<span class="c-var">i</span>[<span class="c-num">:-1</span>].<span class="c-func">split</span>(<span class="c-str">"-"</span>) <span class="c-key">for</span> <span class="c-var">i</span> <span class="c-key">in</span> <span class="c-var">doc</span>.<span class="c-func">readlines</span>()]
+
+<span class="c-var">connections</span> <span class="c-oper">=</span> <span class="c-var">defaultdict</span>(<span class="c-var">set</span>)
+<span class="c-key">for</span> <span class="c-var">each</span> <span class="c-key">in</span> <span class="c-var">input_txt</span>:
+  <span class="c-var">c1</span>, <span class="c-var">c2</span> <span class="c-oper">=</span> <span class="c-var">each</span>
+
+  <span class="c-comm"># duplicate calls to add forward and backward connection of computers</span>
+  <span class="c-var">connections</span>[ (<span class="c-var">c1</span>,) ].<span class="c-func">add</span>(<span class="c-var">c2</span>)
+  <span class="c-var">connections</span>[ (<span class="c-var">c2</span>,) ].<span class="c-func">add</span>(<span class="c-var">c1</span>)
+
+<span class="c-key">def</span> <span class="c-func">combine_connections</span>(<span class="c-var">new_set</span>, <span class="c-var">base</span>):
+  <span class="c-comm">"""</span>
+  <span class="c-comm">Expands LAN groups by merging sets of computers that share common connections.</span>
+  <span class="c-comm"></span>
+  <span class="c-comm">- Each group represents a set of interconnected computers.</span>
+  <span class="c-comm">- A new group is formed if two groups share at least one common connection.</span>
+  <span class="c-comm">- Only fully interconnected groups are considered (each computer in the group</span>
+  <span class="c-comm">  must be directly connected to every other computer in the group).</span>
+  <span class="c-comm">- Sorting is used to ensure that identical groups (regardless of order) are treated equally.</span>
+  <span class="c-comm"></span>
+  <span class="c-comm">Args:</span>
+  <span class="c-comm">    existing_connections (dict): LAN groups being expanded.</span>
+  <span class="c-comm">    base_connections (dict): Initial connections between individual computers.</span>
+  <span class="c-comm"></span>
+  <span class="c-comm">Returns:</span>
+  <span class="c-comm">    dict: New LAN groups formed in this iteration, mapped to their shared connections.</span>
+  <span class="c-comm">"""</span>
+  <span class="c-var">new_connections</span> <span class="c-oper">=</span> <span class="c-var">defaultdict</span>(<span class="c-var">list</span>)
+  <span class="c-var">added_connections</span> <span class="c-oper">=</span> <span class="c-var">set</span>()
+  <span class="c-key">for</span> <span class="c-var">c1</span>,<span class="c-var">c1_connections</span> <span class="c-key">in</span> <span class="c-var">new_set</span>.<span class="c-func">items</span>():
+      <span class="c-key">for</span> <span class="c-var">c2</span>,<span class="c-var">c2_connections</span> <span class="c-key">in</span> <span class="c-var">base</span>.<span class="c-func">items</span>():
+          <span class="c-var">intersection</span> <span class="c-oper">=</span> <span class="c-var">c1_connections</span> <span class="c-oper">&amp;</span> <span class="c-var">c2_connections</span>
+
+          <span class="c-comm"># conditional designed to check easier operations first to quit out early,</span>
+          <span class="c-comm"># expensive operations like issubset() are not precalculated but calculated if needed</span>
+          <span class="c-key">if</span> (<span class="c-var">intersection</span> <span class="c-key">and</span> <span class="c-var">c1</span> <span class="c-key">not</span> <span class="c-key">in</span> <span class="c-var">new_connections</span> <span class="c-key">and</span> 
+              <span class="c-var">c2</span> <span class="c-key">not</span> <span class="c-key">in</span> <span class="c-var">c1</span> <span class="c-key">and</span> <span class="c-var">set</span>(<span class="c-var">c1</span>).<span class="c-func">issubset</span>(<span class="c-var">c2_connections</span>) <span class="c-key">and</span> 
+              <span class="c-var">set</span>(<span class="c-var">c2</span>).<span class="c-func">issubset</span>(<span class="c-var">c1_connections</span>)):
+              <span class="c-var">new_key</span> <span class="c-oper">=</span> <span class="c-var">[]</span>
+              <span class="c-key">for</span> <span class="c-var">i</span> <span class="c-key">in</span> <span class="c-var">c1</span>:
+                  <span class="c-var">new_key</span>.<span class="c-func">append</span>(<span class="c-var">i</span>)
+              <span class="c-var">new_key</span> <span class="c-oper">+=</span> <span class="c-var">c2</span>
+
+              <span class="c-comm"># key_interseciton used as a combination of the key value (singular LAN network) </span>
+              <span class="c-comm"># and intersection between the two passed in LAN networks. It is calculated and </span>
+              <span class="c-comm"># stored as sorted as a form of memoization as order doesn't matter. </span>
+              <span class="c-comm"># ex: LAN aa bb with intersection at cc dd is the same as</span>
+              <span class="c-comm">#     LAN aa cc with intersection at bb dd</span>
+              <span class="c-var">key_intersesction</span> <span class="c-oper">=</span> <span class="c-var">tuple</span>(<span class="c-func">sorted</span>(<span class="c-var">new_key</span>+<span class="c-func">list</span>(<span class="c-var">intersection</span>)))
+              <span class="c-var">new_key</span> <span class="c-oper">=</span> <span class="c-var">tuple</span>(<span class="c-func">sorted</span>(<span class="c-var">new_key</span>))
+              <span class="c-key">if</span> <span class="c-var">key_intersesction</span> <span class="c-key">not</span> <span class="c-key">in</span> <span class="c-var">added_connections</span>:
+                  <span class="c-var">new_connections</span>[<span class="c-var">new_key</span>] <span class="c-oper">=</span> <span class="c-var">intersection</span>
+                  <span class="c-var">added_connections</span>.<span class="c-func">add</span>(<span class="c-var">key_intersesction</span>)
+  <span class="c-key">return</span> <span class="c-var">new_connections</span>
+
+<span class="c-key">def</span> <span class="c-func">main</span>(<span class="c-var">connections</span>):
+  <span class="c-comm">"""</span>
+  <span class="c-comm">Identifies the largest fully interconnected LAN network.</span>
+  <span class="c-comm"></span>
+  <span class="c-comm">- Starts with direct connections and iteratively expands groups by adding computers.</span>
+  <span class="c-comm">- If a group has only one remaining possible connection, it is finalized.</span>
+  <span class="c-comm">- The largest network found is the LAN party, and its names (sorted) form the password.</span>
+  <span class="c-comm"></span>
+  <span class="c-comm">Args:</span>
+  <span class="c-comm">    connections (dict): Initial network connections between individual computers.</span>
+  <span class="c-comm">"""</span>
+  <span class="c-var">new_connections</span> <span class="c-oper">=</span> <span class="c-func">combine_connections</span>(<span class="c-var">connections</span>, <span class="c-var">connections</span>)
+
+  <span class="c-comm"># n is the size of established LANs, starts at 2 as the above calcualtes to 2 when initilzied</span>
+  <span class="c-var">n</span> <span class="c-oper">=</span> <span class="c-num">2</span>
+
+  <span class="c-key">while</span> <span class="c-var">new_connections</span>:
+      <span class="c-var">print</span>(<span class="c-str">"current size"</span>, <span class="c-var">n</span>, <span class="c-str">"; len of total connections"</span>, <span class="c-func">len</span>(<span class="c-var">new_connections</span>))
+      <span class="c-var">final_set</span> <span class="c-oper">=</span> <span class="c-var">set</span>()
+      <span class="c-var">new_connections</span> <span class="c-oper">=</span> <span class="c-func">combine_connections</span>(<span class="c-var">new_connections</span>, <span class="c-var">connections</span>)
+      <span class="c-var">updated_connections</span> <span class="c-oper">=</span> {}
+
+      <span class="c-key">for</span> <span class="c-var">key</span>,<span class="c-var">value</span> <span class="c-key">in</span> <span class="c-var">new_connections</span>.<span class="c-func">items</span>():
+          <span class="c-key">if</span> <span class="c-func">len</span>(<span class="c-var">value</span>) <span class="c-oper">==</span> <span class="c-num">1</span>:
+              <span class="c-var">final_set</span>.<span class="c-func">add</span>(<span class="c-var">tuple</span>(<span class="c-func">sorted</span>(<span class="c-func">list</span>(<span class="c-var">key</span>) <span class="c-oper">+</span> [<span class="c-var">value</span>.<span class="c-func">pop</span>()])))
+          <span class="c-key">else</span>:
+              <span class="c-var">updated_connections</span>[<span class="c-var">key</span>] <span class="c-oper">=</span> <span class="c-var">value</span>
+      <span class="c-var">new_connections</span> <span class="c-oper">=</span> <span class="c-var">updated_connections</span>
+      <span class="c-var">n</span> <span class="c-oper">+=</span> <span class="c-num">1</span>
+
+  <span class="c-var">print</span>(<span class="c-var">final_set</span>)
+  <span class="c-key">for</span> <span class="c-var">each</span> <span class="c-key">in</span> <span class="c-var">final_set</span>:
+      <span class="c-var">temp</span> <span class="c-oper">=</span> <span class="c-func">sorted</span>(<span class="c-var">each</span>)
+      <span class="c-key">for</span> <span class="c-var">cmputer</span> <span class="c-key">in</span> <span class="c-var">temp</span>:
+          <span class="c-var">print</span>(<span class="c-var">cmputer</span>, <span class="c-key">end</span>=<span class="c-str">","</span>)
+
+<span class="c-func">main</span>(<span class="c-var">connections</span>)
+            </code></pre>
         </details>
       </div>
     </section>
