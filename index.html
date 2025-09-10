@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Eric Judys</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/websitemini.png">
+</head>
+<body>
+  <div class="centered-text">
+    Hey! Thank you for taking the time to read my website!
+  </div>
+  <header class="site-header">
+    <div class="header-container">
+      <!-- <div class="job-status">
+        <span>Looking for: Summer 2025 Intern</span>
+      </div> -->
+      <!-- Mobile-only navigation dropdown -->
+      <div class="mobile-nav">
+        <select class="nav-dropdown" onchange="if(this.value) window.location.href=this.value;">
+          <option value="#about">About Me</option>
+          <li><a href="#project-highlight">Project Highlight</a></li>
+          <option value="#code-highlight">Code Highlight</option>
+          <option value="#projects">Projects</option>
+        </select>
+      </div>
+      <!-- Regular navigation for larger screens -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#project-highlight">Project Highlight</a></li>
+          <li><a href="#code-highlight">Code Highlight</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+    <section id="about" class="about-section">
+      <div class="about-top">
+        <div class="about-text">
+          <h2 style="margin-top: 0;">About Me</h2>
+          <p>
+            Hello! My name is <strong>Eric Judys</strong>. I am a 2nd year undergraduate
+            studying <strong>Computer Science</strong> at Cornell University with minors in
+            <strong>Artificial Intelligence, Robotics, Game Design, and Business in Engineering</strong>
+            , expected graduation in <strong>December 2026</strong>.
+          </p>
+          <p>
+            I have a personal passion for <strong>Innovative Robotics</strong> and
+            <strong>Game Design</strong>, which provide uniquely challenging environments and and an 
+            endlessly fascinating range of possibilities. Below, I detail some projects and classwork that
+            highlight my developments in these areas.
+          </p>
+          <p>
+            Outside of academics, I draw my inspiration from both interactive problem-solving and the natural world. Be it optimizing 
+            <a href="https://www.factorio.com/space-age/content" class="embedded-link">Factorio Space Industries</a> or
+            studying evolutionary engineering solutions such as the emergent complexity of the ant pile or the peak aerodynamics of 
+            the king fisher, I seek to apply these princples in all facets of my work to create the next big step forward.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="images/headshot.png" alt="This is a picture of me" />
+          <div class="about-links">
+            <p>
+              <a href="https://www.linkedin.com/in/eric-judys-340a702a0" target="_blank" class="button">LinkedIn</a>
+              <a href="mailto:ericjudys1@gmail.com" target="_blank" class="button">Contact Me</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about-extra">
+        <div class="about-languages">
+          <h3>Languages & Libraries</h3>
+          <div class="button-box">
+            <span class="ind-button">Python</span>
+            <span class="ind-button">Java</span>
+            <span class="ind-button">OCaml</span>
+            <span class="ind-button">C/C++</span>
+            <span class="ind-button">Godot</span>
+            <span class="ind-button">RobotC</span>
+            <span class="ind-button">OpenCV</span>
+            <span class="ind-button">Open3D</span>
+            <span class="ind-button">ORB-SLAM3</span>
+          </div>
+        </div>
+        <div class="about-methodologies">
+          <h3>Coding Methodologies</h3>
+          <div class="button-box">
+            <span class="ind-button">Test-Driven Design</span>
+            <span class="ind-button">Modular Code</span>
+            <span class="ind-button">Clean & Readable</span>
+            <span class="ind-button">Useful Documentation</span>
+            <span class="ind-button">Continuous Deployment</span>
+          </div>
+        </div>
+        <div class="about-coursework">
+          <h3>Relevant Coursework</h3>
+          <div class="button-box">
+            <span class="ind-button">Data Structures & FP</span>
+            <span class="ind-button">OOP</span>
+            <span class="ind-button">AI Decision Making</span>
+            <span class="ind-button">Computer Systems</span>
+            <span class="ind-button">Adv. / Intro Game Architecture</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project-highlight" class="code-section">
+      <h2>Project Highlight</h2>
+        <img src="images/auto_slambot.png" alt="Picture of working bot" class="centered-rounded-img"/>
+        <p>Meet the robot in the picture above, built and designed this summer from scratch powered by no more than two humble <a href="https://www.amazon.com/Logitech-C270-HD-Webcam-Black/dp/B008QS9J6Y/ref=sr_1_18?crid=2VQDZWBFT5Z7A&dib=eyJ2IjoiMSJ9.xVtRFzFOfA678C9UfJ2P5NoGAXhh2AFxmylYPBLDCpbHjB9tx45XORXALU3OWEANMSmdm6hT_b7CbCqhMqUJsYiTzT3aOt7ctsID93Wql_pVaWDTAo6R_nRYXLsiOPXRMON0OxPzdLDZ3RSHBxtoJSYciwQAHGWbI0Dq6B4TbnoOWrn-Q_0Sv1mvFp87GEVF1W21hyNyuPL_sCHsp7xHySLgxCb4xPdD-Ay52LJChRk.TjH2V_5Li8knv-n7tjfWxiipKBaoWvcIXw0MT5m07V8&dib_tag=se&keywords=logitech+webcam&qid=1755199704&sprefix=logitech+webcam%2Caps%2C117&sr=8-18" class="embedded-link">webcams</a>, a <a href = "https://www.amazon.com/Raspberry-Pi-Model-2GB/dp/B09TTNPB4J/ref=sr_1_3?crid=86NC64R8CDA2&dib=eyJ2IjoiMSJ9.I9DWX787q5nRmx2BUn6JKGyWL2yzjT8Ol0g_FMFjExdC3tTHtLhOYVdjowONRCyd5i_Y9hNLb5nJ4o1ViKuSqvUai6gN95lkrOBhoQGK4dVnXnHUTP4D1L7_TjAoYfYW42tyIdTJ1M7M6I8-kUMPvXrlZMjFu0-yGEFrLRf01SCycfJj4Dga1JIFGFni4R9PPKF0h8Qjzf_gYgPTI774IaWnDcS5j9dfQM-JpIh7ugQ.5FXTKnijTL4lqOYb194m8ZfyTq5G_N75T1Trm-RV3Sk&dib_tag=se&keywords=raspberry+pi+4&qid=1755199761&sprefix=raspber%2Caps%2C134&sr=8-3" class = "embedded-link">Raspberry Pi 4</a>, and an <a href= "https://www.amazon.com/ARDUINO-MEGA-2560-REV3-A000067/dp/B0046AMGW0/ref=sr_1_1?crid=12DFWU915R9AX&dib=eyJ2IjoiMSJ9.mz1D_mMr7EDgH2SXGDwsrfIl1EBkBQOk_4HiFU9DKK8YZ8Cu59qfsEhgGLc8nY54yOhtqn7GS_yoYpTzq1voUQJNsTD_oQ8zY3IfS4iv-f6d8D_STEybu1Uim4qRROW2t6iIFcx_rwtaYZFOgv-hqtplaPd6csO2WP_APXnAKVsbTHKclKtFXGOhGVoHWT8soOo4kK1hR0ByOY3_45ih5BzKkDB-Un19Gr69fpYoy3A.IEXHoUIkftRLDSrUkyuRhrlibSqFisgjMHRe-CokgaU&dib_tag=se&keywords=arduino+mega&qid=1755199854&sprefix=arduino+meg%2Caps%2C132&sr=8-1" class = "embedded-link">Arduino Mega</a> to see just how far I could push low-cost hardware in creating a machine that can autonomously explore and map its surroundings using only visual input, running a modified simultaneous localization and planning (<a href="https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping" class="embedded-link">SLAM</a>) system with the option to connect up to a hub PC to store and track surroundings. Handy for dangerous operations or surveillance because of the speed it provides and its ability to perform without contact to a hub or controller when the connection gets spotty.</p>
+        <details>
+          <summary>Continue Reading</summary>
+          <p>The Pi is the star player, running a mini SLAM system. Using it, I take in the footage of two webcams, each at 640x480 10 fps, and every couple of frames, process them into a disparity map using a weighted least squares (WLS) filter to reduce noise. By converting the disparity map into a depth map, I can extract a point cloud of relevant vertices. Additionally, through iterative closest point (<a href = "https://en.wikipedia.org/wiki/Iterative_closest_point" class = "embedded-link">ICP</a>) registration, I estimate the new pose of the robot camera as it moves in space. Projecting the original point cloud to world space using the estimated pose, I can then populate a voxel grid with all newly defined points. By applying a combination of A* and <a href = "https://en.wikipedia.org/wiki/Dubins_path" class = "embedded-link">Dubins path</a> to this grid, the robot can now travel to a defined pose for the camera as it continues its journey to define all accessible voxels. Note that more complex features of traditional SLAM systems, such as <a href = "https://www.thinkautonomous.ai/blog/loop-closure/" class="embedded-link">loop closure</a>, are omitted from this SLAM as the occupancy grid/point cloud substitutes in for a defined path, and the purpose of this bot is just to explore a region; true mapping would be done with a host PC as needed.</p>
+          <img src="images/auto_slambot_processing.png" alt="Picture of bot processing"  class="centered-rounded-img"/>
+          <p>While the Pi ran the heavy computations, the Pi also ran communications to the Arduino and PC. Using an input of desired motor movements for the defined path, the Pi issues orders to the Arduino, chosen for its single-schedule architecture, to get the robot moving. The Pi also broadcasts its video feed to a host PC, if one was connected, and upon request, would get additional supplementary pose updates for the camera from <a href = "https://github.com/UZ-SLAMLab/ORB_SLAM3" class = "embedded-link">ORB-SLAM3</a> running on the computer to bolster its positional understanding.</p>
+          <img src="images/auto_slambot_network.png" alt="Picture of integrated network"  class="centered-rounded-img"/>
+          <p>In my pursuit to squeeze the most out of two webcams, I had to cut a lot of computational corners on the Pi. The point cloud generated from the depth map jumped wildly between frames due to the lower resolution, and I had to rely heavily on estimations as well as a temporal gate that limited what points were accepted from time to time, and reduced the reliability of ICP for the camera pose. The number of frames and the speed of the bot had to be tuned to be performant without leaving potential points unidentified. Also, I originally had the Pi publicly broadcasting via an OpenCV TCP video writer, but I had to rewrite that in favor of sockets in order to transfer metadata along with the frames as I built in the supplementary pose estimation from the PC.</p>
+          <p>All in all, this was a very rewarding and exhilarating experience. I felt that such complicated bots were out of reach, but in one dedicated summer, I accomplished what I set out to do. To continue development of it, I will add a system to identify an object and relate it to the same generic object the bot encountered earlier, a cache of notable features and placements, employing hidden Markov models to improve noisy data estimation, or adapting the robot’s wheels to legs for easier terrain traversal.</p>
+          <p>I greatly enjoyed working on this bot and am looking forward to the next big adventure!</p>
+        </details>
+    </section>
+    <section id="code-highlight" class="code-section">
+      <h2>Code Highlight</h2>
+      <p><a href="https://adventofcode.com" class="embedded-link">Advent of Code</a> is a series of increasingly difficult challenges released each year as a holiday advent calendar. 25 days, 2 parts per day. Below is my Python implementation for Part 2</strong> of <a href="https://adventofcode.com/2024/day/23" class="embedded-link">Day 23</a>, chosen for its conciseness</strong> and elegance</strong>.</p>
+      <p>Given a directory of computer connections as puzzle input in the form of <span class="embedded-code">AA-BB</span>, where there exists a bidirectional connection between computers <span class="embedded-code">AA</span> and <span class="embedded-code">BB</span>, <strong>Part 1</strong> was to find how many interconnected LANs contain at least one computer whose name starts with <span class="embedded-code">t</span>. <strong>Part 2</strong> took this a step further to find the <strong>largest Local Area Network</strong> among all networks.</p>
+      <p>Using <strong>set theory</strong> to compare and obtain the intersection of computer networks, I can capitalize on <strong>fast computations</strong> to rapidly compare the large input of over 3000 connections. My implementation also incorporates an in-depth understanding of the prompt and comparisons such as a network containing computers <span class="embedded-code">AA</span>, <span class="embedded-code">BB</span>, and links to <span class="embedded-code">CC</span>, <span class="embedded-code">DD</span> is fundamentally the same as a network containing computers <span class="embedded-code">AA</span>, <span class="embedded-code">CC</span>, and linked to <span class="embedded-code">BB</span>, <span class="embedded-code">DD</span>, or any permutation of the four computers.</p>
+      <p>These <strong>algorithmic improvements</strong> and <strong>major optimizations</strong>, along with a multitude of smaller improvements, allow my solution to compute the largest LAN of 3000 disjoint computer connections in only <span class="highlight">0.15 seconds</span>.</p>
+      <details>
+        <summary>Show Python LAN Connections Solution</summary>
+          <div class="code-examples">
+          <pre class="dark-code-background"><pre><code>
+<span class="c-key">from</span> <span class="c-var">collections</span> <span class="c-key">import</span> <span class="c-var">defaultdict</span>
+
+<span class="c-comm">"""import input as text after removing new line and seperating the computers
+  note that inputs comes in this form:
+  vz-aj
+  qm-zr
+  cc-av
+  """</span>
+<span class="c-key">with</span> <span class="c-var">open</span>(<span class="c-str">"input.txt"</span>, <span class="c-str">"r+"</span>) <span class="c-key">as</span> <span class="c-var">doc</span>:
+  <span class="c-var">input_txt</span> <span class="c-oper">=</span> [<span class="c-var">i</span>[<span class="c-num">:-1</span>].<span class="c-func">split</span>(<span class="c-str">"-"</span>) <span class="c-key">for</span> <span class="c-var">i</span> <span class="c-key">in</span> <span class="c-var">doc</span>.<span class="c-func">readlines</span>()]
+
+<span class="c-var">connections</span> <span class="c-oper">=</span> <span class="c-var">defaultdict</span>(<span class="c-var">set</span>)
+<span class="c-key">for</span> <span class="c-var">each</span> <span class="c-key">in</span> <span class="c-var">input_txt</span>:
+  <span class="c-var">c1</span>, <span class="c-var">c2</span> <span class="c-oper">=</span> <span class="c-var">each</span>
+
+  <span class="c-comm"># duplicate calls to add forward and backward connection of computers</span>
+  <span class="c-var">connections</span>[ (<span class="c-var">c1</span>,) ].<span class="c-func">add</span>(<span class="c-var">c2</span>)
+  <span class="c-var">connections</span>[ (<span class="c-var">c2</span>,) ].<span class="c-func">add</span>(<span class="c-var">c1</span>)
+
+<span class="c-key">def</span> <span class="c-func">combine_connections</span>(<span class="c-var">new_set</span>, <span class="c-var">base</span>):
+  <span class="c-comm">"""</span>
+  <span class="c-comm">Expands LAN groups by merging sets of computers that share common connections.</span>
+  <span class="c-comm"></span>
+  <span class="c-comm">- Each group represents a set of interconnected computers.</span>
+  <span class="c-comm">- A new group is formed if two groups share at least one common connection.</span>
+  <span class="c-comm">- Only fully interconnected groups are considered (each computer in the group</span>
+  <span class="c-comm">  must be directly connected to every other computer in the group).</span>
+  <span class="c-comm">- Sorting is used to ensure that identical groups (regardless of order) are treated equally.</span>
+  <span class="c-comm"></span>
+  <span class="c-comm">Args:</span>
+  <span class="c-comm">    existing_connections (dict): LAN groups being expanded.</span>
+  <span class="c-comm">    base_connections (dict): Initial connections between individual computers.</span>
+  <span class="c-comm"></span>
+  <span class="c-comm">Returns:</span>
+  <span class="c-comm">    dict: New LAN groups formed in this iteration, mapped to their shared connections.</span>
+  <span class="c-comm">"""</span>
+  <span class="c-var">new_connections</span> <span class="c-oper">=</span> <span class="c-var">defaultdict</span>(<span class="c-var">list</span>)
+  <span class="c-var">added_connections</span> <span class="c-oper">=</span> <span class="c-var">set</span>()
+  <span class="c-key">for</span> <span class="c-var">c1</span>,<span class="c-var">c1_connections</span> <span class="c-key">in</span> <span class="c-var">new_set</span>.<span class="c-func">items</span>():
+      <span class="c-key">for</span> <span class="c-var">c2</span>,<span class="c-var">c2_connections</span> <span class="c-key">in</span> <span class="c-var">base</span>.<span class="c-func">items</span>():
+          <span class="c-var">intersection</span> <span class="c-oper">=</span> <span class="c-var">c1_connections</span> <span class="c-oper">&amp;</span> <span class="c-var">c2_connections</span>
+
+          <span class="c-comm"># conditional designed to check easier operations first to quit out early,</span>
+          <span class="c-comm"># expensive operations like issubset() are not precalculated but calculated if needed</span>
+          <span class="c-key">if</span> (<span class="c-var">intersection</span> <span class="c-key">and</span> <span class="c-var">c1</span> <span class="c-key">not</span> <span class="c-key">in</span> <span class="c-var">new_connections</span> <span class="c-key">and</span> 
+              <span class="c-var">c2</span> <span class="c-key">not</span> <span class="c-key">in</span> <span class="c-var">c1</span> <span class="c-key">and</span> <span class="c-var">set</span>(<span class="c-var">c1</span>).<span class="c-func">issubset</span>(<span class="c-var">c2_connections</span>) <span class="c-key">and</span> 
+              <span class="c-var">set</span>(<span class="c-var">c2</span>).<span class="c-func">issubset</span>(<span class="c-var">c1_connections</span>)):
+              <span class="c-var">new_key</span> <span class="c-oper">=</span> <span class="c-var">[]</span>
+              <span class="c-key">for</span> <span class="c-var">i</span> <span class="c-key">in</span> <span class="c-var">c1</span>:
+                  <span class="c-var">new_key</span>.<span class="c-func">append</span>(<span class="c-var">i</span>)
+              <span class="c-var">new_key</span> <span class="c-oper">+=</span> <span class="c-var">c2</span>
+
+              <span class="c-comm"># key_interseciton used as a combination of the key value (singular LAN network) </span>
+              <span class="c-comm"># and intersection between the two passed in LAN networks. It is calculated and </span>
+              <span class="c-comm"># stored as sorted as a form of memoization as order doesn't matter. </span>
+              <span class="c-comm"># ex: LAN aa bb with intersection at cc dd is the same as</span>
+              <span class="c-comm">#     LAN aa cc with intersection at bb dd</span>
+              <span class="c-var">key_intersesction</span> <span class="c-oper">=</span> <span class="c-var">tuple</span>(<span class="c-func">sorted</span>(<span class="c-var">new_key</span>+<span class="c-func">list</span>(<span class="c-var">intersection</span>)))
+              <span class="c-var">new_key</span> <span class="c-oper">=</span> <span class="c-var">tuple</span>(<span class="c-func">sorted</span>(<span class="c-var">new_key</span>))
+              <span class="c-key">if</span> <span class="c-var">key_intersesction</span> <span class="c-key">not</span> <span class="c-key">in</span> <span class="c-var">added_connections</span>:
+                  <span class="c-var">new_connections</span>[<span class="c-var">new_key</span>] <span class="c-oper">=</span> <span class="c-var">intersection</span>
+                  <span class="c-var">added_connections</span>.<span class="c-func">add</span>(<span class="c-var">key_intersesction</span>)
+  <span class="c-key">return</span> <span class="c-var">new_connections</span>
+
+<span class="c-key">def</span> <span class="c-func">main</span>(<span class="c-var">connections</span>):
+  <span class="c-comm">"""</span>
+  <span class="c-comm">Identifies the largest fully interconnected LAN network.</span>
+  <span class="c-comm"></span>
+  <span class="c-comm">- Starts with direct connections and iteratively expands groups by adding computers.</span>
+  <span class="c-comm">- If a group has only one remaining possible connection, it is finalized.</span>
+  <span class="c-comm">- The largest network found is the LAN party, and its names (sorted) form the password.</span>
+  <span class="c-comm"></span>
+  <span class="c-comm">Args:</span>
+  <span class="c-comm">    connections (dict): Initial network connections between individual computers.</span>
+  <span class="c-comm">"""</span>
+  <span class="c-var">new_connections</span> <span class="c-oper">=</span> <span class="c-func">combine_connections</span>(<span class="c-var">connections</span>, <span class="c-var">connections</span>)
+
+  <span class="c-comm"># n is the size of established LANs, starts at 2 as the above calcualtes to 2 when initilzied</span>
+  <span class="c-var">n</span> <span class="c-oper">=</span> <span class="c-num">2</span>
+
+  <span class="c-key">while</span> <span class="c-var">new_connections</span>:
+      <span class="c-var">print</span>(<span class="c-str">"current size"</span>, <span class="c-var">n</span>, <span class="c-str">"; len of total connections"</span>, <span class="c-func">len</span>(<span class="c-var">new_connections</span>))
+      <span class="c-var">final_set</span> <span class="c-oper">=</span> <span class="c-var">set</span>()
+      <span class="c-var">new_connections</span> <span class="c-oper">=</span> <span class="c-func">combine_connections</span>(<span class="c-var">new_connections</span>, <span class="c-var">connections</span>)
+      <span class="c-var">updated_connections</span> <span class="c-oper">=</span> {}
+
+      <span class="c-key">for</span> <span class="c-var">key</span>,<span class="c-var">value</span> <span class="c-key">in</span> <span class="c-var">new_connections</span>.<span class="c-func">items</span>():
+          <span class="c-key">if</span> <span class="c-func">len</span>(<span class="c-var">value</span>) <span class="c-oper">==</span> <span class="c-num">1</span>:
+              <span class="c-var">final_set</span>.<span class="c-func">add</span>(<span class="c-var">tuple</span>(<span class="c-func">sorted</span>(<span class="c-func">list</span>(<span class="c-var">key</span>) <span class="c-oper">+</span> [<span class="c-var">value</span>.<span class="c-func">pop</span>()])))
+          <span class="c-key">else</span>:
+              <span class="c-var">updated_connections</span>[<span class="c-var">key</span>] <span class="c-oper">=</span> <span class="c-var">value</span>
+      <span class="c-var">new_connections</span> <span class="c-oper">=</span> <span class="c-var">updated_connections</span>
+      <span class="c-var">n</span> <span class="c-oper">+=</span> <span class="c-num">1</span>
+
+  <span class="c-var">print</span>(<span class="c-var">final_set</span>)
+  <span class="c-key">for</span> <span class="c-var">each</span> <span class="c-key">in</span> <span class="c-var">final_set</span>:
+      <span class="c-var">temp</span> <span class="c-oper">=</span> <span class="c-func">sorted</span>(<span class="c-var">each</span>)
+      <span class="c-key">for</span> <span class="c-var">cmputer</span> <span class="c-key">in</span> <span class="c-var">temp</span>:
+          <span class="c-var">print</span>(<span class="c-var">cmputer</span>, <span class="c-key">end</span>=<span class="c-str">","</span>)
+
+<span class="c-func">main</span>(<span class="c-var">connections</span>)
+            </code></pre>
+        </details>
+      </div>
+    </section>
+    <section id="projects" class="projects-section">
+      <h2>Past and Active Projects</h2>
+      <p><strong>Click</strong> the cards to expand and read more!</p>
+      <div id="filters" class="filter-controls">
+        <div class="inseperable">
+          <label for="language">Filter by Language:</label>
+          <select id="language">
+            <option value="">All</option>
+            <option value="Python">Python</option>
+            <option value="OCaml">OCaml</option>
+            <option value="C++">C++</option>
+            <option value="GDScript">GDScript</option>
+            <option value="Java">Java</option>
+            <option value="HTML, CSS">HTML, CSS</option>
+          </select>
+        </div>
+        <div class="inseperable">
+          <label for="topic">Filter by Topic:</label>
+          <select id="topic">
+            <option value="">All</option>
+            <option value="Game Design">Game Design</option>
+            <option value="Robotics & AI">Robotics & AI</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Challenges & Class">Challenges & Class</option>
+          </select>
+        </div>
+        <button id="reset-filters" class="button">Reset</button>
+      </div>
+      <div id="project-list-top" class="project-list"></div>
+      <div id="project-list-expanded" class="project-list"></div>
+      <div id="project-list-bottom" class="project-list"></div>
+    </section>
+    <div class="video-description">
+      <p>
+        <iframe width="18" height="15"
+          src="https://youtu.be/pIUS0r9CveI?autoplay=1&mute=1&si=Nvl80654f4DU_jS0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </p>
+    </div>
+  </main>
+  <footer class="site-footer">
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
